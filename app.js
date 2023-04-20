@@ -33,7 +33,7 @@ renButton.addEventListener("click", function(){
             break;
         }
         else if (name == null) {
-            console.log("User cancelled name input")
+            console.log("User cancelled name input");
             return 1;
         }
         else {
@@ -42,3 +42,34 @@ renButton.addEventListener("click", function(){
     }
     heading.textContent = name + " Renegade Leader";
 });
+
+
+const starButton = document.getElementById("stars");
+const star = document.getElementById("star");
+
+starButton.addEventListener("click", function(){
+    let rating = ""
+    let numRating = ""
+    while (true) {
+        rating = prompt("How many stars would you give my site (1-5)");
+        numRating = Number(rating);
+        if (!isNaN(numRating) && numRating >= 1 && numRating <= 5) {
+            console.log("you are here")
+            break;
+        }
+        else if (rating == null){
+            console.log("User cancelled rating input");
+            return 1;
+        }
+        else {
+            alert("Invalid input.  Please enter a number between 1 and 5")
+        }
+    }
+
+    for(let i = 1; i <= numRating; i++) {
+        let img = document.createElement('img');
+        img.src = 'images/star.png';
+        img.style.width = '100px';
+        star.appendChild(img);
+    }
+})

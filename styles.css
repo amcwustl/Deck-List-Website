@@ -10,7 +10,7 @@ h1 {
     margin-right: 50px;
 }
 
-button{
+#name-change{
     color:white;
     background-color: blue;
     border-color:black;
@@ -22,8 +22,34 @@ button{
     margin-right: 75px;
     height: 50px;
     width: 250px;
-      
-    
+}
+
+#dark{
+    color:white;
+    background-color: blue;
+    border-color:black;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+    display: inline-block;
+    margin-right: 75px;
+    height: 50px;
+    width: 250px;
+}
+
+#psych{
+    color:white;
+    background-color: blue;
+    border-color:black;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+    display: inline-block;
+    margin-right: 75px;
+    height: 50px;
+    width: 250px;
 }
 
 h2 {

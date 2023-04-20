@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezuri Renegade Leader Deck</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="app.js"></script> -->
 </head>
 <body>
     <header>
@@ -13,17 +14,6 @@
         <button id="name-change">Are you the Renegade Leader?</button>
         <button id="psych">Feeling Psychedlic?</button>
         <button id="dark">Prefer Dark Mode?</button>
-        <script>
-            const renButton = document.getElementById("name-change");
-            const heading = document.getElementById("heading")
-
-            renButton.addEventListener("click", function() {
-                const name = prompt("Please enter your name:");
-                if (name) {
-                    heading.textContent = name + " Renegade Leader";
-                }
-            });
-        </script>
         <script src="app.js"></script>
     </header>
     <main>

@@ -9,7 +9,22 @@
 </head>
 <body>
     <header>
-        <h1>Ezuri Renegade Leader</h1>
+        <h1 id="heading">Ezuri Renegade Leader</h1>
+        <button id="name-change">Are you the Renegade Leader?</button>
+        <button id="psych">Feeling Psychedlic?</button>
+        <button id="dark">Prefer Dark Mode?</button>
+        <script>
+            const renButton = document.getElementById("name-change");
+            const heading = document.getElementById("heading")
+
+            renButton.addEventListener("click", function() {
+                const name = prompt("Please enter your name:");
+                if (name) {
+                    heading.textContent = name + " Renegade Leader";
+                }
+            });
+        </script>
+        <script src="app.js"></script>
     </header>
     <main>
         <div class="container">
